@@ -1,6 +1,7 @@
+
 {
     "model_class": "BidirectionalAttentionFlow",
-    "model_serialization_prefix": "/net/efs/aristo/dlfa/models/bidaf",
+    "model_serialization_prefix": "/home/marilena/Dropbox/ONTOLOGY-BUILDING/RESOURCES-DEV/deep_qa_models/bidaf",
     "encoder": {
         "word": {
           "type": "cnn",
@@ -28,7 +29,7 @@
     "embeddings": {
       "words": {
         "dimension": 100,
-        "pretrained_file": "/net/efs/aristo/dlfa/glove/glove.6B.100d.txt.gz",
+        "pretrained_file": "/home/marilena/Dropbox/ONTOLOGY-BUILDING/RESOURCES-DEV/glove/glove.6B.100d.txt.gz",
         "project": true,
         "fine_tune": false,
         "dropout": 0.2
@@ -43,6 +44,6 @@
       "type": "adadelta",
       "learning_rate": 0.5
     },
-    "validation_files": ["/net/efs/aristo/dlfa/squad/processed/dev.tsv"],
-    "train_files": ["/net/efs/aristo/dlfa/squad/processed/train.tsv"]
+    "validation_files": ["/home/marilena/Dropbox/ONTOLOGY-BUILDING/RESOURCES-DEV/squad/processed/dev.tsv"],
+    "train_files": ["/home/marilena/Dropbox/ONTOLOGY-BUILDING/RESOURCES-DEV/squad/processed/train.tsv"]
 }
